@@ -36,4 +36,4 @@ CREATE TABLE `abc_school`.`working_time` (
 
 
 INSERT INTO employees(uuid,first_name,last_name,token,department) VALUES ('aaa-bbb-111','Meghnine','Islem','1999','Informatics');
-
+INSERT INTO employees(uuid,first_name,last_name,token,department) VALUES ('ccc-ddd-222','Meghnine','Zakaria','1234','Informatics');
