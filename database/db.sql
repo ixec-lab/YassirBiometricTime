@@ -18,7 +18,7 @@ CREATE TABLE `abc_school`.`checks` (
   `employee` INT NOT NULL,
   `checkdate` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `type`ENUM('IN','OUT') NOT NULL,
-  `comment` TEXT NOT NULL,
+  `comment` TEXT NULL,
 
   PRIMARY KEY (`id`),
   FOREIGN KEY (`employee`) REFERENCES employees(`id`)
@@ -33,4 +33,7 @@ CREATE TABLE `abc_school`.`working_time` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`employee`) REFERENCES employees(`id`)
 ) ENGINE = InnoDB;
+
+
+INSERT INTO employees(uuid,first_name,last_name,token,department) VALUES ('aaa-bbb-111','Meghnine','Islem','1999','Informatics');
 

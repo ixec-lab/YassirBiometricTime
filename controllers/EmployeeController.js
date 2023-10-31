@@ -78,8 +78,9 @@ class EmployeeController
 
         const id = await Checkers.checkToken(uuid,token)
         const checkedPerDay = await Checkers.checkPerDay(id,"OUT")
+        const isInchecked = await Checkers.checkPerDay(id,"IN")
 
-        if(id && !checkedPerDay){
+        if(id && !checkedPerDay && isInchecked){
             // save the time
             const Isaved = await EmployeeModel.checkOut(id,comment)
             console.log(Isaved)
