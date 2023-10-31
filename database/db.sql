@@ -1,3 +1,5 @@
+CREATE DATABASE `abc_school`;
+USE `abc_school`;
 
 CREATE TABLE `abc_school`.`employees` (
   `id` INT NOT NULL AUTO_INCREMENT, 

@@ -1,5 +1,5 @@
 import EmployeeModel from "../models/EmployeeModel.js";
-import Checkers  from "../helpers/checkers.js";
+import Checkers  from "../helpers/Checkers.js";
 import Carbon from "../helpers/Carbon.js";
 
 class EmployeeController
